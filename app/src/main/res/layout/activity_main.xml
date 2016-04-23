@@ -24,4 +24,25 @@
         android:id="@+id/visualizeData_B"
         android:layout_below="@+id/inputData_B"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Symptoms"
+        android:id="@+id/symptomsData_B"
+        android:layout_below="@+id/visualizeData_B"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Events"
+        android:id="@+id/eventsData_B"
+        android:layout_alignTop="@+id/symptomsData_B"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
+
 </RelativeLayout>
