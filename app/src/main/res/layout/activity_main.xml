@@ -9,8 +9,19 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.app.team103.aircheck.MainActivity">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:text="Input Data"
+        android:id="@+id/inputData_B"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Visualize Data"
+        android:id="@+id/visualizeData_B"
+        android:layout_below="@+id/inputData_B"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
