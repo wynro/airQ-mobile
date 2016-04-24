@@ -9,8 +9,8 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     public static final String INPUT_TYPE = "INPUT_TYPE";
-    public static final String INPUT_SYMPTOM = "symptom";
-    public static final String INPUT_EVENT = "event";
+    public static final String INPUT_SYMPTOM = "symptoms";
+    public static final String INPUT_EVENT = "conditions";
     public static final int CODE_OK = 0;
     public static final int CODE_NOK = 1;
 

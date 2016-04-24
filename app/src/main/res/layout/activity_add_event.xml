@@ -13,8 +13,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Symptom"
-        android:id="@+id/symptom_TV"
+        android:text="Event"
+        android:id="@+id/event_TV"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp" />
@@ -22,50 +22,41 @@
     <Spinner
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/symptom_SP"
+        android:id="@+id/event_SP"
         android:spinnerMode="dropdown"
-        android:layout_above="@+id/intensity_TV"
+        android:layout_below="@+id/event_TV"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="68dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Intensity"
-        android:id="@+id/intensity_TV"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <Spinner
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/intensity_SP"
-        android:spinnerMode="dropdown"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="121dp" />
+        android:layout_marginTop="56dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add symptom"
-        android:id="@+id/addSymptom_B"
+        android:text="Add event"
+        android:id="@+id/addEvent_B"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_toLeftOf="@+id/backSymtoData_B"
-        android:layout_toStartOf="@+id/backSymtoData_B" />
+        android:layout_toLeftOf="@+id/backEvetoData_B"
+        android:layout_toStartOf="@+id/backEvetoData_B" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Back"
-        android:id="@+id/backSymtoData_B"
-        android:layout_alignTop="@+id/addSymptom_B"
+        android:id="@+id/backEvetoData_B"
+        android:layout_alignTop="@+id/addEvent_B"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="You don&apos;t need to input any location, we&apos;ll do it for you :)"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>

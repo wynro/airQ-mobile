@@ -33,4 +33,22 @@
         <item>9</item>
         <item>10</item>
     </string-array>
+    <string-array name="event_names">
+        <item>Choose one</item>
+        <item>Fire</item>
+        <item>Dust Storm</item>
+        <item>Tornado</item>
+        <item>Smoke Plume</item>
+        <item>Earthquake</item>
+        <item>Volcano</item>
+    </string-array>
+    <string-array name="event_keys">
+        <item>null</item>
+        <item>fire</item>
+        <item>dustStorm</item>
+        <item>tornado</item>
+        <item>smokePlumes</item>
+        <item>earthquake</item>
+        <item>volcano</item>
+    </string-array>
 </resources>

@@ -27,8 +27,8 @@ public class AddSymptomActivity extends AppCompatActivity implements AdapterView
         symptom_SP = (Spinner) findViewById(R.id.symptom_SP);
         intensity_SP = (Spinner) findViewById(R.id.intensity_SP);
         intensity_TV = (TextView) findViewById(R.id.intensity_TV);
-        addSymptom_B = (Button) findViewById(R.id.addSymptom_B);
-        backSymtoData_B = (Button) findViewById(R.id.backSymtoData_B);
+        addSymptom_B = (Button) findViewById(R.id.addEvent_B);
+        backSymtoData_B = (Button) findViewById(R.id.backEvetoData_B);
         // Listeners
         symptom_SP.setOnItemSelectedListener(this);
         intensity_SP.setOnItemSelectedListener(this);
@@ -66,7 +66,7 @@ public class AddSymptomActivity extends AppCompatActivity implements AdapterView
                 }
                 break;
             case R.id.intensity_SP:
-
+                // Nothing
                 break;
         }
     }
@@ -79,7 +79,7 @@ public class AddSymptomActivity extends AppCompatActivity implements AdapterView
     @Override
     public void onClick(View v) {
         switch (v.getId()){
-            case R.id.addSymptom_B:
+            case R.id.addEvent_B:
                 if(symptom_SP.getSelectedItemPosition() != 0 && intensity_SP.getSelectedItemPosition() != 0){
                     // Valid input
                     Intent returnIntent = new Intent();
@@ -94,7 +94,7 @@ public class AddSymptomActivity extends AppCompatActivity implements AdapterView
                     Toast.makeText(getApplicationContext(), "Please choose a symptom and intensity", Toast.LENGTH_SHORT).show();
                 }
                 break;
-            case R.id.backSymtoData_B:
+            case R.id.backEvetoData_B:
                 setResult(MainActivity.CODE_NOK);
                 finish();
                 break;
