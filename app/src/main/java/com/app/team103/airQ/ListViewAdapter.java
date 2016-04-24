@@ -1,6 +1,7 @@
-package com.app.team103.aircheck;
+package com.app.team103.airQ;
 
 import android.content.Context;
+import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,12 +13,11 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 public class ListViewAdapter extends BaseAdapter implements ListAdapter {
-    private ArrayList<String> list = new ArrayList<>();
+    // <<Name, key>, value>
+    private ArrayList<Pair<Pair<String, String>, Integer>> list = new ArrayList<>();
     private Context context;
 
-
-
-    public ListViewAdapter(ArrayList<String> list, Context context) {
+    public ListViewAdapter(ArrayList<Pair<Pair<String, String>, Integer>> list, Context context) {
         this.list = list;
         this.context = context;
     }
@@ -48,7 +48,7 @@ public class ListViewAdapter extends BaseAdapter implements ListAdapter {
 
         //Handle TextView and display string from your list
         TextView listItemText = (TextView)view.findViewById(R.id.list_item_string);
-        listItemText.setText(list.get(position));
+        listItemText.setText(list.get(position).first.first + " (" + list.get(position).second + ")");
 
         //Handle buttons and add onClickListeners
         Button deleteBtn = (Button)view.findViewById(R.id.delete_btn);

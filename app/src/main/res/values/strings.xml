@@ -1,3 +1,36 @@
 <resources>
     <string name="app_name" translatable="false">AirQ</string>
+    <string-array name="symptom_names">
+        <item>Choose one</item>
+        <item>Cough</item>
+        <item>Shortness of breath</item>
+        <item>Wheezing</item>
+        <item>Sneezing</item>
+        <item>Nasal obstruction</item>
+        <item>Itchy eyes</item>
+        <item>Air quality</item>
+    </string-array>
+    <string-array name="symptom_keys">
+        <item>null</item>
+        <item>cough</item>
+        <item>airLackness</item>
+        <item>wheezing</item>
+        <item>sneezing</item>
+        <item>obstruction</item>
+        <item>itchy</item>
+        <item>airQuality</item>
+    </string-array>
+    <string-array name="symptom_values">
+        <item>Choose one</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
 </resources>

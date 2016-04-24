@@ -1,4 +1,4 @@
-package com.app.team103.aircheck;
+package com.app.team103.airQ;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

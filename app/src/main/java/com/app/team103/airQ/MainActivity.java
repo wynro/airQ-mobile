@@ -1,4 +1,4 @@
-package com.app.team103.aircheck;
+package com.app.team103.airQ;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -11,6 +11,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public static final String INPUT_TYPE = "INPUT_TYPE";
     public static final String INPUT_SYMPTOM = "symptom";
     public static final String INPUT_EVENT = "event";
+    public static final int CODE_OK = 0;
+    public static final int CODE_NOK = 1;
 
     private Button inputData_B, visualizeData_B, symptomsData_B, eventsData_B;
 
